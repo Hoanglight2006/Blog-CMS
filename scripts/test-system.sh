@@ -211,13 +211,13 @@ echo ""
 echo "======================================================================"
 echo "                       TONG KET KET QUA TEST                          "
 echo "======================================================================"
-echo " Tong so ca kiem thu: $TOTAL_TESTS"
-echo -e " So ca thanh cong   : \033[32m$PASSED_TESTS\033[0m"
+echo " Tong so ca kiem thu : $TOTAL_TESTS"
+echo -e " So ca pass          : \033[32m$PASSED_TESTS\033[0m"
 if [ "$FAILED_TESTS" -gt 0 ]; then
-    echo -e " So ca that bai     : \033[31m$FAILED_TESTS\033[0m"
+    echo -e " So ca fail          : \033[31m$FAILED_TESTS\033[0m"
 else
-    echo -e " So ca that bai     : \033[32m0\033[0m"
+    echo -e " So ca fail          : \033[32m0\033[0m"
     echo ""
-    echo -e "\033[32m>>> XAC NHAN: TOAN BO HE THONG (COMMIT 1 & COMMIT 2) DAT 100% PASS! <<<\033[0m"
+    echo -e "\033[32mKet qua: Tat ca cac test case deu PASSED.\033[0m"
 fi
 echo "======================================================================"

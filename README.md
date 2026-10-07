@@ -108,13 +108,13 @@ Truy cập Grafana > **Explore** > chọn nguồn dữ liệu **Loki**:
 
 ---
 
-## 6. Kiểm thử tự động (Automated Testing)
-Dự án tích hợp bộ kịch bản kiểm thử tự động 15 ca test (bao gồm kiểm thử an ninh, phân vùng mạng, test biên, xử lý mã lỗi và hệ thống giám sát):
-- **Trên Windows PowerShell:**
+## 6. Kiểm thử tự động
+Chạy script kiểm tra hệ thống:
+- **Windows (PowerShell):**
   ```powershell
   .\scripts\test-system.ps1
   ```
-- **Trên Linux / WSL / Git Bash:**
+- **Linux / Git Bash:**
   ```bash
   chmod +x ./scripts/test-system.sh
   ./scripts/test-system.sh

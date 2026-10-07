@@ -299,13 +299,13 @@ Write-Host ""
 Write-Host "======================================================================" -ForegroundColor Cyan
 Write-Host "                       TONG KET KET QUA TEST                          " -ForegroundColor Cyan
 Write-Host "======================================================================" -ForegroundColor Cyan
-Write-Host (" Tong so ca kiem thu: {0}" -f $totalTests)
-Write-Host (" So ca thanh cong   : {0}" -f $passedTests) -ForegroundColor Green
+Write-Host (" Tong so ca kiem thu : {0}" -f $totalTests)
+Write-Host (" So ca pass          : {0}" -f $passedTests) -ForegroundColor Green
 if ($failedTests -gt 0) {
-    Write-Host (" So ca that bai     : {0}" -f $failedTests) -ForegroundColor Red
+    Write-Host (" So ca fail          : {0}" -f $failedTests) -ForegroundColor Red
 } else {
-    Write-Host (" So ca that bai     : 0") -ForegroundColor Green
+    Write-Host (" So ca fail          : 0") -ForegroundColor Green
     Write-Host ""
-    Write-Host ">>> XAC NHAN: TOAN BO HE THONG (COMMIT 1 & COMMIT 2) DAT 100% PASS! <<<" -ForegroundColor Green
+    Write-Host "Ket qua: Tat ca cac test case deu PASSED." -ForegroundColor Green
 }
 Write-Host "======================================================================" -ForegroundColor Cyan
