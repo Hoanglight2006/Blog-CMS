@@ -12,7 +12,7 @@
 ### Added (Commit 2)
 - Tích hợp Prometheus server thu thập dữ liệu định kỳ mỗi 15 giây (`prometheus.yml`).
 - Bổ sung cAdvisor thu thập metrics tài nguyên container (CPU, RAM, Network).
-- Bổ sung mysqld-exporter thu thập metrics trạng thái và truy vấn MySQL.
+- Bổ sung mysqld-exporter thu thập metrics trạng thái và truy vấn MySQL (sử dụng cờ `--mysqld.address` và biến `MYSQLD_EXPORTER_PASSWORD`).
 - Tích hợp Grafana tự động kết nối Data Source Prometheus qua cơ chế provisioning.
 - Mở rộng phân vùng mạng `monitor_net` bảo đảm cô lập dịch vụ giám sát.
 
