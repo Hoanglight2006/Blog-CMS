@@ -108,5 +108,19 @@ Truy cập Grafana > **Explore** > chọn nguồn dữ liệu **Loki**:
 
 ---
 
-## 6. Lịch sử cập nhật
+## 6. Kiểm thử tự động (Automated Testing)
+Dự án tích hợp bộ kịch bản kiểm thử tự động 15 ca test (bao gồm kiểm thử an ninh, phân vùng mạng, test biên, xử lý mã lỗi và hệ thống giám sát):
+- **Trên Windows PowerShell:**
+  ```powershell
+  .\scripts\test-system.ps1
+  ```
+- **Trên Linux / WSL / Git Bash:**
+  ```bash
+  chmod +x ./scripts/test-system.sh
+  ./scripts/test-system.sh
+  ```
+
+---
+
+## 7. Lịch sử cập nhật
 Xem chi tiết tại [CHANGELOG.md](CHANGELOG.md).

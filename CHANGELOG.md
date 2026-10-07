@@ -15,6 +15,7 @@
 - Bổ sung mysqld-exporter thu thập metrics trạng thái và truy vấn MySQL (sử dụng cờ `--mysqld.address` và biến `MYSQLD_EXPORTER_PASSWORD`).
 - Tích hợp Grafana tự động kết nối Data Source Prometheus qua cơ chế provisioning.
 - Mở rộng phân vùng mạng `monitor_net` bảo đảm cô lập dịch vụ giám sát.
+- Xây dựng bộ kịch bản kiểm thử tự động 15 ca test (`scripts/test-system.ps1`, `scripts/test-system.sh`) bao gồm kiểm thử an ninh, phân vùng mạng, test biên, mã lỗi 404 và sức khỏe hệ thống giám sát đạt 100% PASS.
 
 ---
 
